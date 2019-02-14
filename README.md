@@ -32,6 +32,14 @@ Function InstallApp{
 $process = Start-Process -FilePath "$dest" -ArgumentList "-s"
 }
 ```
+*** install chrome (ps1 as user non admin ok)
+```
+download:
+https://cloud.google.com/chrome-enterprise/browser/download/#
+
+
+>msiexec.exe /i "C:\Users\$user\Downloads\GoogleChromeEnterpriseBundle64\Installers\GoogleChromeStandaloneEnterprise64.msi" /qb-!
+```
 
 *** install slack (ps1 non admin ok as user)
 ```
