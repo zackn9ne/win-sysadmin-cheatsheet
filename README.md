@@ -9,13 +9,15 @@
 ```
 $Command = "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe"
 
-& $Command /update user updatepromptuser=true forceappshutdown=true displaylevel=true
+$Command /update user updatepromptuser=true forceappshutdown=true displaylevel=true
 ```
 
 *** install dbeaver (ps1) latest ver
 ```
-$src = "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe"
-$dest = "C:\temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
+$link = "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe"
+$outfile = "C:\temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
+
+Invoke-WebRequest $link -OutFile $file
 
 
 Function DownloadInstaller(){
@@ -29,4 +31,24 @@ Start-Job -Name WebReq -ScriptBlock {
 Function InstallApp{
 $process = Start-Process -FilePath "$dest" -ArgumentList "-s"
 }
+```
+
+*** install slack (ps1)
+```
+$soft_name = "slack"
+$link = "http://slack.com/ssb/download-win64-msi"
+$file = "c:\Temp\slack.msi"
+
+Invoke-WebRequest $link -OutFile $file
+
+
+Function Install_MSI_slack_Installer{
+$arguments= ' /qn /l*v .\install_slack.txt' 
+Start-Process `
+     -file  $file `
+     -arg $arguments `
+     -passthru | wait-process
+}
+
+Install_MSI_slack_Installer 
 ```
