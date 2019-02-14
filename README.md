@@ -12,7 +12,7 @@ $Command = "C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RC
 $Command /update user updatepromptuser=true forceappshutdown=true displaylevel=true
 ```
 
-*** install dbeaver (ps1) latest ver
+*** install dbeaver (ps1 non-admin ok as user) latest ver
 ```
 $link = "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe"
 $outfile = "C:\temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
@@ -33,7 +33,7 @@ $process = Start-Process -FilePath "$dest" -ArgumentList "-s"
 }
 ```
 
-*** install slack (ps1)
+*** install slack (ps1 non admin ok as user)
 ```
 $soft_name = "slack"
 $link = "http://slack.com/ssb/download-win64-msi"
