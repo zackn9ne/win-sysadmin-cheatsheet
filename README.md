@@ -17,21 +17,18 @@ $Command /update user updatepromptuser=true forceappshutdown=true displaylevel=t
 $link = "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe"
 $outfile = "C:\temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
 
-Invoke-WebRequest $link -OutFile $file
-
 
 Function DownloadInstaller(){
-Invoke-WebRequest -src $src -DestFile $dest
-$msifile = Get-ChildItem -Path $dest -File -Filter '*.ms*' 
-write-host " MSI $dest was downloaded "
-}
+Invoke-WebRequest -src $link -DestFile $outfile
+
 Start-Job -Name WebReq -ScriptBlock {
     DownloadInstaller }
 
 Function InstallApp{
-$process = Start-Process -FilePath "$dest" -ArgumentList "-s"
+$process = Start-Process -FilePath "$outfile" -ArgumentList "-s"
 }
 ```
+
 *** install chrome (ps1 as user non admin ok)
 ```
 download:
