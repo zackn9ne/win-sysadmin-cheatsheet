@@ -38,7 +38,7 @@ https://cloud.google.com/chrome-enterprise/browser/download/#
 >msiexec.exe /i "C:\temp\GoogleChromeStandaloneEnterprise64.msi" /qb-!
 ```
 
-*** install slack (ps1 non admin ok as user)
+*** install slack (ps1 non admin ok as user) (lately only will run as admin)
 ```
 $soft_name = "slack"
 $link = "http://slack.com/ssb/download-win64-msi"
