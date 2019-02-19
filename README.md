@@ -58,7 +58,7 @@ Start-Process `
 Install_MSI_slack_Installer 
 ```
 
-*** install dropbox
+*** install dropbox (ps admin console can't hurt)
 ```
 $outfile = ".\Dropbox 66.4.84 Offline Installer.exe"
 Function InstallApp{
