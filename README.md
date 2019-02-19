@@ -66,3 +66,18 @@ Function InstallApp{
 }
 InstallApp
 ```
+
+*** install lenovo (ps1 admin)
+```
+$link = "https://download.lenovo.com/pccbbs/thinkvantage_en/systemupdate5.07.0074.exe"
+$outfile = "C:\temp\len.exe" 
+
+
+Function DownloadInstaller(){
+Invoke-WebRequest $link -OutFile $outfile
+}
+DownloadInstaller
+Function InstallApp{
+$process = Start-Process -FilePath "$outfile" -ArgumentList "/S"
+}
+InstallApp
