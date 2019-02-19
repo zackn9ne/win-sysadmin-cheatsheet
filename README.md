@@ -25,7 +25,7 @@ Start-Job -Name WebReq -ScriptBlock {
     DownloadInstaller }
 
 Function InstallApp{
-$process = Start-Process -FilePath "$outfile" -ArgumentList "/S"
+$process = Start-Process -FilePath "$outfile" -ArgumentList "/S /allusers"
 }
 ```
 
