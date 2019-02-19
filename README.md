@@ -19,7 +19,7 @@ $outfile = "C:\temp\dbeaver-ce-5.3.4-x86_64-setup.exe"
 
 
 Function DownloadInstaller(){
-Invoke-WebRequest -src $link -DestFile $outfile
+Invoke-WebRequest $link -OutFile $outfile
 
 Start-Job -Name WebReq -ScriptBlock {
     DownloadInstaller }
