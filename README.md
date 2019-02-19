@@ -62,7 +62,7 @@ Install_MSI_slack_Installer
 ```
 $outfile = ".\Dropbox 66.4.84 Offline Installer.exe"
 Function InstallApp{
-    $process = Start-Process -FilePath "$outfile" -ArgumentList "/S
+    $process = Start-Process -FilePath "$outfile" -ArgumentList "/S"
 }
 InstallApp
 ```
@@ -78,6 +78,6 @@ Invoke-WebRequest $link -OutFile $outfile
 }
 DownloadInstaller
 Function InstallApp{
-$process = Start-Process -FilePath "$outfile" -ArgumentList "/S"
+$process = Start-Process -FilePath "$outfile" -ArgumentList "/Silent"
 }
 InstallApp
