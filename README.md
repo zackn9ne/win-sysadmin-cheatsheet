@@ -4,6 +4,10 @@
 
 `powercfg -restoredefaultschemes`
 
+*** Refresh group policy
+
+`gpupdate -force`
+
 *** update office via click2run.exe (ps1)
 
 ```
