@@ -85,3 +85,13 @@ Function InstallApp{
 $process = Start-Process -FilePath "$outfile" -ArgumentList "/Silent"
 }
 InstallApp
+
+*** windows 10 meraki vpn (ps1)
+```
+# remembercredential will save the first good username/pw credential entered in GUI
+# put shared key for "insert VPN password"
+# dnssuffix is like ad.companyname.com but probably dosent matter
+# type over the brackets with the values and put in quotes only
+
+Add-VpnConnection -AllUserConnection -Name "[insert VPN name]" -ServerAddress [insert IP/hostname for VPN] -TunnelType L2tp -DNSSuffix "[insert domain name]" -EncryptionLevel Optional -AuthenticationMethod PAP -L2tpPsk "[insert VPN password]" -Force -PassThru -RememberCredential
+```
