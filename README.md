@@ -8,6 +8,14 @@
 
 `gpupdate -force`
 
+# install office365 (cmd)
+
+```
+bing for Office Deployment Tool
+cd to that directory
+setup /configure configuration-Office365-x64.xml
+```
+
 *** update office via click2run.exe (ps1)
 
 ```
