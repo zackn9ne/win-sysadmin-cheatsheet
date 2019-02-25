@@ -87,7 +87,7 @@ $process = Start-Process -FilePath "$outfile" -ArgumentList "/Silent"
 InstallApp
 ```
 
-*** windows 10 meraki vpn (ps1)
+*** windows 10 meraki vpn (ps1 administrative prompt)
 
 ```
 # remembercredential will save the first good username/pw credential entered in GUI
