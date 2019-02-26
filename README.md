@@ -12,6 +12,13 @@
 
 `gpupdate -force`
 
+*** Force update to Latest Windows 10
+
+```
+Bing for microsoft software support download page or visit https://www.microsoft.com/en-us/software-download/windows10
+click on the Update Assistant, note this is also the page where you can Create Install Media (other option)
+```
+
 # install office365 (cmd)
 
 ```
