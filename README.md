@@ -4,6 +4,10 @@
 
 `powercfg -restoredefaultschemes`
 
+*** Keep computer alive
+
+`powercfg /change monitor-timeout-ac 5000`
+
 *** Refresh group policy
 
 `gpupdate -force`
