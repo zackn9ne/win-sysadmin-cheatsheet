@@ -12,6 +12,9 @@
 
 `gpupdate -force`
 
+*** For fun get external IP (ps1)
+`(Invoke-WebRequest -uri "https://api.ipify.org/").Content`
+
 *** Force update to Latest Windows 10
 
 ```
