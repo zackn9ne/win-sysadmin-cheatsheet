@@ -4,13 +4,15 @@
 
 `sudo mount -t drvfs D: /mnt/d`
 
-*** Awesome tools and links area
+*** Update Windows by command line
 
 ```
-WSUS Offline Update: http://download.wsusoffline.net/
+1. Download this tool: WSUS Offline Update: http://download.wsusoffline.net/
+2. Create the installer for the target machine using: wsusoffline\UpdateGenerater.exe
+3. On the client run: wsusoffline\client\UpdateInstaller.exe (deselect things about C++) and let it run on the client
 ```
 
-*** Force 1809 update
+*** Force 1809 update (microsoft way/same page as create install media)
 
 `download the update assistant: https://www.microsoft.com/en-us/software-download/windows10`
 
@@ -35,14 +37,8 @@ shutdown /r /t 0
 shutdown /s /f /t 1
 ```
 
-*** Force update to Latest Windows 10
 
-```
-Bing for microsoft software support download page or visit https://www.microsoft.com/en-us/software-download/windows10
-click on the Update Assistant, note this is also the page where you can Create Install Media (other option)
-```
-
-# install office365 (cmd)
+# install office365 (Microsoft way Office Deployment Tool)
 
 ```
 bing for Office Deployment Tool
