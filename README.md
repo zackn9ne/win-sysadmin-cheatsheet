@@ -1,5 +1,8 @@
 # win-sysadmin-cheatsheet
 
+*** Mount USB drive in WSL
+`sudo mount -t drvfs D: /mnt/d`
+
 *** Restore default power settings (cmd)
 
 `powercfg -restoredefaultschemes`
