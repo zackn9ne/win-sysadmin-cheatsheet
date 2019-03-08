@@ -15,6 +15,12 @@
 *** For fun get external IP (ps1)
 `(Invoke-WebRequest -uri "https://api.ipify.org/").Content`
 
+*** shutdowns and restarts
+```
+shutdown /r /t 0
+shutdown /s /f /t 1
+```
+
 *** Force update to Latest Windows 10
 
 ```
