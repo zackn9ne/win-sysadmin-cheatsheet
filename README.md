@@ -4,6 +4,12 @@
 
 `sudo mount -t drvfs D: /mnt/d`
 
+*** Awesome tools and links area
+
+```
+WSUS Offline Update: http://download.wsusoffline.net/
+```
+
 *** Force 1809 update
 
 `download the update assistant: https://www.microsoft.com/en-us/software-download/windows10`
