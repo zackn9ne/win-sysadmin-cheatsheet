@@ -4,6 +4,10 @@
 
 `sudo mount -t drvfs D: /mnt/d`
 
+*** Force 1809 update
+
+`download the update assistant: https://www.microsoft.com/en-us/software-download/windows10`
+
 *** Restore default power settings (cmd)
 
 `powercfg -restoredefaultschemes`
