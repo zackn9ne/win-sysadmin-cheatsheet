@@ -12,6 +12,12 @@
 3. On the client run: wsusoffline\client\UpdateInstaller.exe (deselect things about C++) and let it run on the client
 ```
 
+*** remove windows 10 Mail App
+
+```
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage 
+```
+
 *** Force 1809 update (microsoft way/same page as create install media)
 
 `download the update assistant: https://www.microsoft.com/en-us/software-download/windows10`
