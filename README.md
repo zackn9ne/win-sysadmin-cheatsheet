@@ -30,6 +30,10 @@ Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 
 `powercfg /change monitor-timeout-ac 5000`
 
+*** update AD Sync from Server to O365 ->
+
+`Start-ADSyncSyncCycle -PolicyType Delta`
+
 *** Refresh group policy
 
 `gpupdate -force`
