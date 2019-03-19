@@ -4,6 +4,15 @@
 
 `sudo mount -t drvfs D: /mnt/d`
 
+*** Delete messed up drive maps
+`net use z /delete`
+
+*** Check drive maps
+`net use`
+
+*** Check AD bind (set command)
+`set user`
+
 *** Update Windows by command line
 
 ```
