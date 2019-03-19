@@ -122,11 +122,11 @@ Install_MSI_slack_Installer
 
 *** install dropbox (ps admin console can't hurt)
 ```
-$outfile = ".\Dropbox 66.4.84 Offline Installer.exe"
-Function InstallApp{
-    $process = Start-Process -FilePath "$outfile" -ArgumentList "/S"
-}
-InstallApp
+Download
+https://www.dropbox.com/downloading?build=68.4.102&plat=win&type=full
+# 2 liner
+$outfile = "Dropbox 68.4.102 Offline Installer.exe"
+$process = Start-Process -FilePath "$outfile" -ArgumentList "/S"
 ```
 
 *** install lenovo (ps1 admin)
