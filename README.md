@@ -75,19 +75,12 @@ $Command /update user updatepromptuser=true forceappshutdown=true displaylevel=t
 
 *** install dbeaver (ps1 non-admin ok as user) latest ver
 ```
+$softname = "dbeaver"
 $link = "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe"
-$outfile = "C:\temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
+$file = "C:\Temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
 
-
-Function DownloadInstaller(){
-Invoke-WebRequest $link -OutFile $outfile
-
-Start-Job -Name WebReq -ScriptBlock {
-    DownloadInstaller }
-
-Function InstallApp{
-$process = Start-Process -FilePath "$outfile" -ArgumentList "/S /allusers"
-}
+Invoke-WebRequest $link -OutFile $file
+# install manually
 ```
 
 *** install chrome (ps1 as user non admin ok)
