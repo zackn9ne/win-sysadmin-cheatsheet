@@ -11,7 +11,7 @@
 `net use`
 
 *** Check AD bind (set command)
-`set user`
+`systeminfo`
 
 *** Update Windows by command line
 
