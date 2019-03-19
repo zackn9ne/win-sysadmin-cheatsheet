@@ -94,9 +94,10 @@ $process = Start-Process -FilePath "$outfile" -ArgumentList "/S /allusers"
 ```
 download:
 https://cloud.google.com/chrome-enterprise/browser/download/#
+2. unzip and cd into that folder
 
 
->msiexec.exe /i "C:\temp\GoogleChromeStandaloneEnterprise64.msi" /qb-!
+cmd>msiexec.exe /i "GoogleChromeStandaloneEnterprise64.msi" /qb-!
 ```
 
 *** install slack (ps1 non admin ok as user) (lately only will run as admin)
