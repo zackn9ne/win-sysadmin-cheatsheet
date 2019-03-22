@@ -149,3 +149,18 @@ InstallApp
 Add-VpnConnection -AllUserConnection -Name "[insert VPN name]" -ServerAddress [insert IP/hostname for VPN] -TunnelType L2tp -DNSSuffix "[insert domain name]" -EncryptionLevel Optional -AuthenticationMethod PAP -L2tpPsk "[insert VPN password]" -Force -PassThru -RememberCredential
 
 ```
+
+*** windows 
+```
+Function Set-WallPaper($Value)
+
+{
+
+ Set-ItemProperty -path 'HKCU:\Control Panel\Desktop\' -name wallpaper -value $value
+
+ rundll32.exe user32.dll, UpdatePerUserSystemParameters
+
+}
+Set-WallPaper -Value "C:\Temp\Company_Background.jpg"
+
+```
