@@ -150,7 +150,7 @@ Add-VpnConnection -AllUserConnection -Name "[insert VPN name]" -ServerAddress [i
 
 ```
 
-*** windows 
+*** powershell update wallpaper function and example 
 ```
 Function Set-WallPaper($Value)
 
