@@ -21,9 +21,11 @@
 3. On the client run: wsusoffline\client\UpdateInstaller.exe (deselect things about C++) and let it run on the client
 ```
 
-*** remove windows 10 Mail App
+*** remove windows 10 Mail App, Lenovo, Preinstalled Office
 
 ```
+Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage 
+Get-AppxPackage *Lenovo* | Remove-AppxPackage
 Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage 
 ```
 
