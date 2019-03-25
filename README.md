@@ -77,6 +77,8 @@ $Command /update user updatepromptuser=true forceappshutdown=true displaylevel=t
 
 *** install dbeaver (ps1 non-admin ok as user) latest ver
 ```
+[Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12
+
 $softname = "dbeaver"
 $link = "https://dbeaver.io/files/dbeaver-ce-latest-x86_64-setup.exe"
 $file = "C:\Temp\dbeaver-ce-5.3.4-x86_64-setup.exe" 
