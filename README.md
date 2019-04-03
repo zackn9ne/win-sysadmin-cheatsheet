@@ -97,25 +97,6 @@ https://cloud.google.com/chrome-enterprise/browser/download/#
 cmd>msiexec.exe /i "GoogleChromeStandaloneEnterprise64.msi" /qb-!
 ```
 
-*** install slack (ps1 non admin ok as user) (lately only will run as admin)
-```
-$soft_name = "slack"
-$link = "http://slack.com/ssb/download-win64-msi"
-$file = "c:\Temp\slack.msi"
-
-Invoke-WebRequest $link -OutFile $file
-
-
-Function Install_MSI_slack_Installer{
-$arguments= ' /qn /l*v .\install_slack.txt' 
-Start-Process `
-     -file  $file `
-     -arg $arguments `
-     -passthru | wait-process
-}
-
-Install_MSI_slack_Installer 
-```
 
 *** install dropbox (ps admin console can't hurt)
 ```
