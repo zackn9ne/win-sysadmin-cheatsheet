@@ -1,6 +1,6 @@
 $soft_name = "slack"
 $link = "http://slack.com/ssb/download-win64-msi"
-$file = "c:\Windows\Temp\slack.msi"
+$file = "c:\windows\temp\slack.msi"
 
 Invoke-WebRequest $link -OutFile $file
 
