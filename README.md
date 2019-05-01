@@ -13,6 +13,9 @@
 *** Check AD bind (set command)
 `systeminfo`
 
+*** Remove from AD and put into WORKGROUP (elev ps1 prompt)
+` Remove-Computer -UnjoinDomaincredential Domain01\Admin01 -PassThru -Verbose -Restart`
+
 *** Update Windows by command line
 
 ```
