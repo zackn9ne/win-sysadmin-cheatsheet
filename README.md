@@ -5,6 +5,7 @@
 `sudo mount -t drvfs D: /mnt/d`
 
 *** Install WSL (admin command prompt)
+
 `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
 
 *** Delete messed up drive maps
