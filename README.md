@@ -4,9 +4,13 @@
 
 `sudo mount -t drvfs D: /mnt/d`
 
-*** Install WSL (admin command prompt)
+*** Install WSL (admin powershell prompt) 1/2
 
 `Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux`
+
+*** install ubuntu for WSL (powershell) 2/2
+
+`Invoke-WebRequest -Uri https://aka.ms/wsl-ubuntu-1604 -OutFile Ubuntu.appx -UseBasicParsing`
 
 *** Delete messed up drive maps
 `net use z /delete`
