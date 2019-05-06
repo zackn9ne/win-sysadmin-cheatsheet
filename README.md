@@ -48,9 +48,12 @@ Get-AppxPackage *windowscommunicationsapps* | Remove-AppxPackage
 
 `powercfg -restoredefaultschemes`
 
-*** Keep computer alive
+*** Keep computer alive (for something like 83 hours)
 
 `powercfg /change monitor-timeout-ac 5000`
+`powercfg /change standby-timeout-ac 5000`
+
+
 
 *** update AD Sync from Server to O365 ->
 
