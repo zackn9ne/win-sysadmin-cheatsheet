@@ -1,5 +1,11 @@
 # win-sysadmin-cheatsheet
 
+*** one liner silent installs
+
+**** download filestream first, cmd this
+
+`    GoogleDriveFSSetup --silent --desktop_shortcut`
+
 *** Mount USB drive in WSL
 
 `sudo mount -t drvfs D: /mnt/d`
