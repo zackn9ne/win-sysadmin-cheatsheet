@@ -1,7 +1,7 @@
 # win-sysadmin-cheatsheet
 
 ** Enroll in intune
-`D:\Get-WindowsAutoPilotInfo.ps1 -OutPutFile d:\upload2intune.csv`
+`D:\Get-WindowsAutoPilotInfo.ps1 -OutPutFile d:\upload2intune.csv -append`
 
 *** one liner silent installs
 
