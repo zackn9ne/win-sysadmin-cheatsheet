@@ -3,6 +3,9 @@
 ** Enroll in intune
 `D:\Get-WindowsAutoPilotInfo.ps1 -OutPutFile d:\upload2intune.csv -append`
 
+** Get serialnumber
+`gwmi win32_bios`
+
 *** one liner silent installs
 
 **** download filestream first, cmd this
