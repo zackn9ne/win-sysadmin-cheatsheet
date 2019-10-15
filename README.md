@@ -1,7 +1,11 @@
 # win-sysadmin-cheatsheet
 
 ** Enroll in intune
-`D:\Get-WindowsAutoPilotInfo.ps1 -OutPutFile d:\upload2intune.csv -append`
+```
+Install-Script -Name Get-WindowsAutoPilotInfo
+Set-ExecutionPolicy Bypass
+D:\Get-WindowsAutoPilotInfo.ps1 -OutPutFile d:\upload2intune.csv -append
+```
 
 ** Get serialnumber
 `gwmi win32_bios`
