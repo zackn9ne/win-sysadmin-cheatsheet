@@ -1,5 +1,8 @@
 # win-sysadmin-cheatsheet
 
+** Is Workstation Azure ad joined?
+` dsregcmd /status `
+
 ** Enroll in intune
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
