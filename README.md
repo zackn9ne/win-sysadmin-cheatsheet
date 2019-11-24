@@ -3,6 +3,14 @@
 ** Is Workstation Azure ad joined?
 ` dsregcmd /status `
 
+** Is user domain joined or not?
+```
+> whoami
+> echo %logonserver% 
+ using a local account then you will get as a result Computer\username
+If you are logged using a domain account then you will get as a result Domain\username 
+```
+
 ** Enroll in intune
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
