@@ -11,6 +11,10 @@
 If you are logged using a domain account then you will get as a result Domain\username 
 ```
 
+** Server Core
+`sconfig`
+` Install-WindowsFeature File-Services`
+
 ** Enroll in intune
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
