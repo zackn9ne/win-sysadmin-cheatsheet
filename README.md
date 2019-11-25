@@ -1,5 +1,14 @@
 # win-sysadmin-cheatsheet
 
+** UPN 
+* this changes the UPN on the o365
+```
+12:49 PM Umit: $msolcred = get-credential
+12:49 PM Umit: connect-msolservice -credential $msolcred
+12:50 PM Umit: Set-MsolUserPrincipalName -UserPrincipalName user@contoso.onmicrosoft.com -NewUserPrincipalName newuser@contoso.com
+```
+* verify the UPN by finding the user in AD, selecting Attribute Editor, and scrolling to UserPrincipalName locally
+
 ** Is Workstation Azure ad joined?
 ` dsregcmd /status `
 
