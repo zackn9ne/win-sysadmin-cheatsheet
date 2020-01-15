@@ -24,6 +24,7 @@ If you are logged using a domain account then you will get as a result Domain\us
 `sconfig`
 ` Install-WindowsFeature File-Services`
 
+# intune
 ** Enroll in intune
 ```
 Install-Script -Name Get-WindowsAutoPilotInfo
